@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Portal</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Container -->
+        <section id="home" class="home-section" title="Home Section">
+            <h2>About Me</h2>
+            <!-- Profile Image -->
+            <img src="../../../Images/Kaido.jpg" alt="Student Profile Picture" class="profile-img" title="K.Sudalaimani Profile Picture" style="border-radius: 50%; width: 150px; object-fit: cover;">
+            <p>Name : <strong>K.Sudalaimani</strong></p>
+            <p>Status : <strong>Student</strong></p>
+            <p>College Name : <strong>PSN College of Engineering and Technology</strong></p>
+            
+            <!-- Student Details Table -->
+            <h3>Student Information Table</h3>
+            <table class="student-info-table" title="Detailed Student Information">
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Full Name</strong></td>
+                        <td>K. Sudalaimani</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Course</strong></td>
+                        <td>B.E - Electronics and Communication Engineering (ECE)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>College</strong></td>
+                        <td>PSN College of Engineering and Technology</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Email</strong></td>
+                        <td>sudalaimani5112007@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Year of Study</strong></td>
+                        <td>Current Year</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Career Goal</strong></td>
+                        <td>To become a successful engineer and contribute to innovative technological advancements</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- About Me Container -->
+        <section id="about" class="about-section" title="About Section">
+            <h2>About Me - Detailed Profile</h2>
+            <p><em>To become a successful engineer and contribute to innovative technological advancements.</em></p>
+            <p>Hello! I'm <strong>K. Sudalaimani</strong>, a <mark>B.E - ECE (Electronics and Communication Engineering)</mark>
+                student with a
+                passion for both technology and creativity.
+                In my free time, I enjoy various activities that help me maintain a balanced lifestyle.</p>
+            
+            <!-- Hobbies and Interests Lists -->
+            <h3>My Hobbies and Interests</h3>
+            
+            <h4>Sports Activities (Ordered by Preference):</h4>
+            <ol class="sports-list" title="Sports Hobbies">
+                <li><strong>Cricket</strong> - Keeps me active and teaches teamwork</li>
+                <li><strong>Outdoor Games</strong> - Essential for physical fitness</li>
+                <li><strong>Free Fire (Gaming)</strong> - Digital entertainment and strategic thinking</li>
+            </ol>
+            
+            <h4>Creative Activities:</h4>
+            <ul class="creative-list" title="Creative Hobbies">
+                <li><strong>Drawing</strong> - Expressing my creative side through art</li>
+                <li><strong>Web Development</strong> - Building skills in modern technology</li>
+                <li><strong>Problem Solving</strong> - Exploring innovative solutions</li>
+            </ul>
+            
+            <h4>Academic Interests:</h4>
+            <ul class="academic-list" title="Academic Interests">
+                <li>Electronics and Communication Engineering</li>
+                <li>Web Development and Programming</li>
+                <li>Innovative Technological Advancements</li>
+                <li>Engineering Design and Implementation</li>
+            </ul>
+            
+            <p>I'm currently exploring <u>web development</u> and eager to build my skills in this field. My goal is to
+                become a successful engineer, contribute to innovative technological advancements, and most
+                importantly, <strong>make my parents proud</strong> through my achievements and dedication.</p>
+        </section>
+        <!-- Student Registration Form -->
+        <section id="registration" class="registration-section" title="Student Registration Form">
+            <h2>Student Registration Form</h2>
+            <p>Fill out the form below to register as a new student or update your information:</p>
+            <form action="#" method="post" class="registration-form" title="Complete Registration Form">
+                <!-- Personal Information -->
+                <fieldset>
+                    <legend><strong>Personal Information</strong></legend>
+                    
+                    <p>
+                        <label for="fullName">Full Name: <span style="color: red;">*</span></label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required title="Enter your complete name">
+                    </p>
+                    
+                    <p>
+                        <label for="email">Email Address: <span style="color: red;">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required title="Enter a valid email address">
+                    </p>
+                    
+                    <p>
+                        <label for="phone">Phone Number: <span style="color: red;">*</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="+91 1234567890" pattern="[0-9+\s\-]+" required title="Enter your phone number">
+                    </p>
+                    
+                    <p>
+                        <label for="dob">Date of Birth: <span style="color: red;">*</span></label>
+                        <input type="date" id="dob" name="dob" required title="Select your date of birth">
+                    </p>
+                    
+                    <p>
+                        <label for="gender">Gender: <span style="color: red;">*</span></label>
+                        <select id="gender" name="gender" required title="Select your gender">
+                            <option value="">-- Select Gender --</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                </fieldset>
+                
+                <!-- Academic Information -->
+                <fieldset>
+                    <legend><strong>Academic Information</strong></legend>
+                    
+                    <p>
+                        <label for="studentId">Student ID:</label>
+                        <input type="text" id="studentId" name="studentId" placeholder="Enter your student ID" title="Your unique student identification number">
+                    </p>
+                    
+                    <p>
+                        <label for="course">Course/Department: <span style="color: red;">*</span></label>
+                        <select id="course" name="course" required title="Select your course">
+                            <option value="">-- Select Course --</option>
+                            <option value="ece">Electronics and Communication Engineering (ECE)</option>
+                            <option value="cse">Computer Science Engineering (CSE)</option>
+                            <option value="eee">Electrical and Electronics Engineering (EEE)</option>
+                            <option value="mech">Mechanical Engineering</option>
+                            <option value="civil">Civil Engineering</option>
+                        </select>
+                    </p>
+                    
+                    <p>
+                        <label for="year">Year of Study: <span style="color: red;">*</span></label>
+                        <input type="number" id="year" name="year" min="1" max="4" placeholder="1-4" required title="Enter your current year of study">
+                    </p>
+                    
+                    <p>
+                        <label for="cgpa">CGPA/Percentage:</label>
+                        <input type="number" id="cgpa" name="cgpa" min="0" max="10" step="0.01" placeholder="Enter CGPA (0-10)" title="Enter your current CGPA">
+                    </p>
+                </fieldset>
+                
+                <!-- Additional Information -->
+                <fieldset>
+                    <legend><strong>Additional Information</strong></legend>
+                    
+                    <p>
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" rows="3" placeholder="Enter your complete address" title="Enter your residential address"></textarea>
+                    </p>
+                    
+                    <p>
+                        <label for="skills">Skills/Interests:</label>
+                        <textarea id="skills" name="skills" rows="3" placeholder="List your skills and interests" title="Describe your technical and personal skills"></textarea>
+                    </p>
+                    
+                    <p>
+                        <label for="website">Personal Website/Portfolio:</label>
+                        <input type="url" id="website" name="website" placeholder="https://example.com" title="Enter your website URL if you have one">
+                    </p>
+                    
+                    <p>
+                        <label for="resume">Upload Resume (PDF):</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf" title="Upload your resume in PDF format">
+                    </p>
+                    
+                    <p>
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter" value="yes" title="Subscribe to our newsletter">
+                            Subscribe to newsletter for updates
+                        </label>
+                    </p>
+                    
+                    <p>
+                        <label for="terms">
+                            <input type="checkbox" id="terms" name="terms" value="agreed" required title="You must agree to terms and conditions">
+                            I agree to the <a href="#" title="Read Terms and Conditions">Terms and Conditions</a> <span style="color: red;">*</span>
+                        </label>
+                    </p>
+                </fieldset>
+                
+                <!-- Form Buttons -->
+                <p>
+                    <input type="submit" value="Register Now" title="Submit the registration form">
+                    <input type="reset" value="Clear Form" title="Reset all form fields">
+                </p>
+            </form>
+        </section>
+        
+        <!-- Contact Form -->
+        <section id="contactForm" class="contact-section" title="Contact Form">
+            <h2>Contact Me</h2>
+            <form action="#" method="post" class="contact-form">
+                <p>
+                    <label for="cMe">Your Email: <span style="color: red;">*</span></label>
+                    <input type="email" id="cMe" name="cMe" placeholder="Enter your email" required title="Enter your email address">
+                </p>
+                
+                <p>
+                    <label for="query">Your Query: <span style="color: red;">*</span></label>
+                    <textarea name="query" id="query" placeholder="Enter your query here" rows="5" required title="Enter your message or query"></textarea>
+                </p>
+                <p>
+                    <a href="mailto:sudalaimani5112007@gmail.com" target="_blank" title="Send email directly">Send Email Directly</a>
+                </p>
+                <p>
+                    <input type="submit" value="Submit Query" title="Submit your query">
+                </p>
+            </form>
+        </section>
+        
+        <!-- Embedded Content Section -->
+        <section id="media" class="media-section" title="Embedded Media Content">
+            <h2>Campus Location & Resources</h2>
+            <p>Find us on the map and explore related educational content:</p>
+            
+            <!-- Embedded Google Map -->
+            <h3>PSN College of Engineering and Technology - Location</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.1234567890!2d77.0!3d11.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDAwJzAwLjAiTiA3N8KwMDAnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890" 
+                class="map-embed" 
+                title="PSN College Location Map" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            
+            <!-- Embedded YouTube Video -->
+            <h3 style="margin-top: 30px;">Educational Resource - Web Development Tutorial</h3>
+            <iframe 
+                src="https://www.youtube.com/embed/UB1O30fR-EE" 
+                class="video-embed" 
+                title="HTML Tutorial for Beginners - YouTube Video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </section>
+    </main>
+    <!-- Footer Container -->
+     <footer class="footer-section" title="Footer Section">
+        <section id="contact" class="contact-info" title="Contact Information">
+            <p>&copy; 2026 K.Sudalaimani. All rights reserved.</p>
+            <p>Email: <a href="mailto:sudalaimani5112007@gmail.com" title="Send email to K.Sudalaimani">sudalaimani5112007@gmail.com</a></p>
+            <p><small>PSN College of Engineering and Technology - B.E ECE</small></p>
+        </section>
+     </footer>
+</body>
+
+</html>
