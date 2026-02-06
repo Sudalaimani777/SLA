@@ -1,0 +1,28 @@
+a[href="https://www.google.com"] {
+    color: red;
+}
+
+a[href="#"]{
+    color: yellow;
+}
+
+/* Starts With */
+a[href^="https"]{
+    color: orange;
+}
+
+/* Ends With */
+a[href$=".org"]{
+    color: green;
+}
+
+/* Contains */
+a[href*="meta"]{
+color: rgb(238, 130, 130);
+}
+
+/* Space Separated */
+
+div[class~="container"]{
+    border: 2px solid black;
+}

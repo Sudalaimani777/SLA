@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+section{
+    color: green;
+}
+
+footer section p{
+    color: red;
+}
+
+main section h2{
+    background-color: orange;
+}
+
+.heading2{
+    color: purple;
+}
+
+#same{
+    color: white;
+}
