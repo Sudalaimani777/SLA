@@ -37,3 +37,7 @@ function a () {
     return "Hii"
 }
 console.log(typeof a);
+
+// const valuePI = Math.PI(); //This will give error because PI is a property not a function, so we should use Math.PI without parentheses
+const valuePI = Math.PI; // This is the correct way to access the value of PI
+console.log(valuePI);

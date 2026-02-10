@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header nav {
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+nav div img {
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+nav ul  li:nth-child(3){
+    /* outline: none; */
+    border-color: inherit;
+    border-radius: 10px;
+}
