@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-left: 25px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 25px;
+    padding-right: 25px;
+}
+
+nav ul li  a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color .3s ease, border-bottom .3s ease;
+}
+
+nav ul li a:hover{
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+main section a:visited{
+    color: purple;
+}
+
+main section a:nth-child(even):visited{
+  color: blue;
+}
