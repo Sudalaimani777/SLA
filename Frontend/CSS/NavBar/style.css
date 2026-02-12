@@ -1,0 +1,262 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding-top: 60px; /* Space for fixed header */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin: 30px 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #3498db;
+    margin: 20px 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+}
+
+.example-section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* ==================== POSITION: FIXED ==================== */
+/* Fixed elements are positioned relative to the viewport */
+/* They stay in the same place even when scrolling */
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.fixed-bottom-right {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    font-weight: bold;
+    z-index: 999;
+}
+
+/* ==================== POSITION: STICKY ==================== */
+/* Sticky elements act like relative until scrolling reaches a threshold */
+/* Then they "stick" to a specified position */
+
+.sticky-nav {
+    position: sticky;
+    top: 60px; /* Sticks 60px from top (below fixed header) */
+    background-color: #3498db;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+
+/* ==================== POSITION: STATIC ==================== */
+/* Static is the default position value */
+/* Elements follow normal document flow */
+
+.static-box {
+    background-color: #ecf0f1;
+    border: 2px solid #95a5a6;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* ==================== POSITION: RELATIVE ==================== */
+/* Relative positioning moves element from its normal position */
+/* The space in normal flow is preserved */
+
+.relative-container {
+    position: relative;
+    background-color: #fef5e7;
+    padding: 20px;
+    border: 2px dashed #f39c12;
+    min-height: 200px;
+}
+
+.box {
+    display: inline-block;
+    background-color: #f39c12;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.relative-box {
+    position: relative;
+    top: 20px;      /* Moves 20px down from its normal position */
+    left: 30px;     /* Moves 30px right from its normal position */
+    background-color: #e67e22;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ==================== POSITION: ABSOLUTE ==================== */
+/* Absolute positioning removes element from normal flow */
+/* Positioned relative to nearest positioned ancestor */
+
+.absolute-container {
+    position: relative; /* This is the reference point for absolute children */
+    background-color: #e8f8f5;
+    border: 3px solid #16a085;
+    min-height: 400px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.absolute-box {
+    position: absolute;
+    background-color: #16a085;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Position absolute boxes at different corners */
+.absolute-box.top-left {
+    top: 10px;
+    left: 10px;
+    background-color: #1abc9c;
+}
+
+.absolute-box.top-right {
+    top: 10px;
+    right: 10px;
+    background-color: #16a085;
+}
+
+.absolute-box.bottom-left {
+    bottom: 10px;
+    left: 10px;
+    background-color: #138d75;
+}
+
+.absolute-box.bottom-right {
+    bottom: 10px;
+    right: 10px;
+    background-color: #0e6655;
+}
+
+.absolute-box.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the element */
+    background-color: #117a65;
+    font-size: 1.1em;
+}
+
+/* ==================== Z-INDEX EXAMPLES ==================== */
+/* Z-index only works on positioned elements */
+
+.z-index-container {
+    position: relative;
+    height: 300px;
+    background-color: #fdecea;
+    border: 2px solid #e74c3c;
+    padding: 20px;
+}
+
+.z-box {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.z-box.z-1 {
+    background-color: #e74c3c;
+    top: 50px;
+    left: 50px;
+    z-index: 3;
+}
+
+.z-box.z-2 {
+    background-color: #9b59b6;
+    top: 100px;
+    left: 100px;
+    z-index: 2;
+}
+
+.z-box.z-3 {
+    background-color: #3498db;
+    top: 150px;
+    left: 150px;
+    z-index: 3;
+}
+
+/* ==================== HELPER STYLES ==================== */
+
+.content-spacer {
+    line-height: 2;
+}
+
+.content-spacer p {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .example-section {
+        padding: 20px;
+    }
+    
+    .absolute-box {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}

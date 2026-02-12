@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>CSS Position Examples</title>
+</head>
+
+<body>
+    <!-- Fixed Position Example - Always visible at top -->
+    <header class="fixed-header">
+        Fixed Header (position: fixed)
+    </header>
+
+    <!-- Sticky Position Example - Sticks after scrolling -->
+    <nav class="sticky-nav">
+        Sticky Navigation (position: sticky)
+    </nav>
+
+    <main class="container">
+        <h1>CSS Position Property Examples</h1>
+        
+        <!-- Static Position Example (Default) -->
+        <section class="example-section">
+            <h2>1. Static Position (Default)</h2>
+            <div class="static-box">
+                I am a static box. This is the default position. I follow normal document flow.
+            </div>
+            <div class="static-box">
+                Second static box - positioned normally below the first.
+            </div>
+        </section>
+
+        <!-- Relative Position Example -->
+        <section class="example-section">
+            <h2>2. Relative Position</h2>
+            <div class="relative-container">
+                <div class="box">Normal Box 1</div>
+                <div class="box relative-box">
+                    Relative Box (moved 30px right, 20px down from its normal position)
+                </div>
+                <div class="box">Normal Box 3</div>
+            </div>
+        </section>
+
+        <!-- Absolute Position Example -->
+        <section class="example-section">
+            <h2>3. Absolute Position</h2>
+            <div class="absolute-container">
+                <p>This is a relatively positioned container (parent)</p>
+                <div class="absolute-box top-left">Top Left</div>
+                <div class="absolute-box top-right">Top Right</div>
+                <div class="absolute-box bottom-left">Bottom Left</div>
+                <div class="absolute-box bottom-right">Bottom Right</div>
+                <div class="absolute-box center">Centered</div>
+            </div>
+        </section>
+
+        <!-- Fixed Position Example -->
+        <section class="example-section">
+            <h2>4. Fixed Position</h2>
+            <p>The header at the top is fixed. It stays in place when you scroll.</p>
+            <div class="fixed-bottom-right">
+                Fixed Bottom Right Corner
+            </div>
+        </section>
+
+        <!-- Sticky Position Example -->
+        <section class="example-section">
+            <h2>5. Sticky Position</h2>
+            <p>The navigation bar is sticky. Scroll down to see it stick to the top.</p>
+            <div class="content-spacer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </section>
+
+        <!-- Z-index Example -->
+        <section class="example-section">
+            <h2>6. Z-Index with Positioning</h2>
+            <div class="z-index-container">
+                <div class="z-box z-1">Z-index: 1</div>
+                <div class="z-box z-2">Z-index: 2</div>
+                <div class="z-box z-3">Z-index: 3</div>
+            </div>
+        </section>
+
+        <!-- Extra content for scrolling -->
+        <section class="example-section">
+            <h2>Scroll to See Fixed and Sticky Effects</h2>
+            <div class="content-spacer">
+                <p>Keep scrolling to see how fixed and sticky positioning work...</p>
+                <p>The fixed header stays at the top of the viewport.</p>
+                <p>The sticky navigation sticks after you scroll past it.</p>
+                <p>Notice how the fixed element in the bottom-right corner also stays in place.</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
