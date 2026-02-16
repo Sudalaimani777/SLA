@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query and Pseudo elements & Classes</title>
+</head>
+<body>
+    <!-- Navigation Bar for :hover, :active demos -->
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Header with ::first-letter and ::first-line -->
+        <header class="main-header">
+            <h1>Media Queries and Pseudo Classes/Elements Demo</h1>
+            <p class="intro-text">
+                This is a comprehensive demonstration of CSS pseudo classes and pseudo elements. 
+                Pseudo classes allow you to style elements based on their state, while pseudo 
+                elements let you style specific parts of elements without adding extra HTML markup.
+            </p>
+        </header>
+
+        <!-- Section for Pseudo Classes -->
+        <section class="pseudo-classes-section">
+            <h2>Pseudo Classes Examples</h2>
+            
+            <!-- Hover, Active, Focus Demo -->
+            <div class="buttons-demo">
+                <h3>:hover, :active, :focus</h3>
+                <button class="btn-primary">Hover Me!</button>
+                <button class="btn-secondary">Click Me!</button>
+                <input type="text" placeholder="Focus on this input" class="demo-input">
+            </div>
+
+            <!-- nth-child Demo -->
+            <div class="list-demo">
+                <h3>:nth-child, :first-child, :last-child</h3>
+                <ul class="styled-list">
+                    <li>First Item (styled with :first-child)</li>
+                    <li>Second Item</li>
+                    <li>Third Item (odd)</li>
+                    <li>Fourth Item (even)</li>
+                    <li>Fifth Item (odd)</li>
+                    <li>Last Item (styled with :last-child)</li>
+                </ul>
+            </div>
+
+            <!-- Form Validation Demo -->
+            <div class="form-demo">
+                <h3>:valid, :invalid, :required</h3>
+                <form>
+                    <label for="email">Email (required):</label>
+                    <input type="email" id="email" required placeholder="Enter your email">
+                    
+                    <label for="url">Website URL:</label>
+                    <input type="url" id="url" placeholder="https://example.com">
+                    
+                    <label for="age">Age (18-100):</label>
+                    <input type="number" id="age" min="18" max="100" placeholder="Enter age">
+                </form>
+            </div>
+        </section>
+
+        <!-- Section for Pseudo Elements -->
+        <section class="pseudo-elements-section">
+            <h2>Pseudo Elements Examples</h2>
+            
+            <!-- ::before and ::after Demo -->
+            <div class="before-after-demo">
+                <h3>::before and ::after</h3>
+                <p class="quote">This text has decorative elements added using ::before and ::after pseudo elements.</p>
+                <div class="badge">Premium</div>
+                <div class="badge success">Verified</div>
+                <div class="badge warning">New</div>
+            </div>
+
+            <!-- ::first-letter and ::first-line Demo -->
+            <div class="typography-demo">
+                <h3>::first-letter and ::first-line</h3>
+                <p class="drop-cap">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
+
+            <!-- ::selection Demo -->
+            <div class="selection-demo">
+                <h3>::selection</h3>
+                <p class="select-text">Try selecting this text! The selection color has been customized using the ::selection pseudo element.</p>
+            </div>
+        </section>
+
+        <!-- Responsive Grid Demo -->
+        <section class="responsive-section">
+            <h2>Media Queries - Responsive Grid</h2>
+            <div class="grid-container">
+                <div class="grid-item">Box 1</div>
+                <div class="grid-item">Box 2</div>
+                <div class="grid-item">Box 3</div>
+                <div class="grid-item">Box 4</div>
+                <div class="grid-item">Box 5</div>
+                <div class="grid-item">Box 6</div>
+            </div>
+            <p class="resize-note">Resize your browser window to see the responsive layout change!</p>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 CSS Demo. All rights reserved.</p>
+    </footer>
+</body>
+</html>

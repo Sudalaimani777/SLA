@@ -5,6 +5,13 @@
     font-size: 2rem;
 }
 
+:root{
+    --primary-color: #333;
+    --hover-color: red;
+    --visited-color: purple;
+    --even-visited-color: blue;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -29,12 +36,7 @@ nav ul li  a {
     transition: color .3s ease, border-bottom .3s ease;
 }
 
-:root{
-    --primary-color: #333;
-    --hover-color: red;
-    --visited-color: purple;
-    --even-visited-color: blue;
-}
+
 
 nav ul li a:hover{
     color: var(--hover-color);
