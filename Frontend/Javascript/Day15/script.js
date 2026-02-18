@@ -1,5 +1,4 @@
 // 1. Write a program that checks:If the user is logged in.If logged in, check if they are an admin or a normal user.
-
 let isLoggedIn = true;
 let isAdmin = false;
 
