@@ -61,5 +61,14 @@ console.log("Grade: " + grade);
 // let a = 0;
 // for(a; a<=3; a++){
 //     console.log(a);
-    
+
 // }
+
+for (let i = 0; i <= 15; i++) {
+    if (i % 2 === 0) {
+        console.log(i + " is even");
+    }
+    else if (i % 2 !== 0) {
+        console.log(i + " is odd");
+    }
+}
