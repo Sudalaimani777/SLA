@@ -140,3 +140,36 @@ do{
         count++;
     }
 }while(count < 5 && evenNum++);
+
+
+function findOddNum (num){
+    for(let i =1; i<= num; i++){
+        if(i % 2 !==0){
+            console.log(i);
+        }
+    }
+}
+findOddNum(100);
+
+// FInd the number is negative or positive :-
+const findNumberIsPositiveOrNegative = num => num < 0 ? "Negative" : "Positive";
+console.log(findNumberIsPositiveOrNegative(2));
+
+function multipleOfThree(num){
+    for(let i = 0 ; i<= num; i++){
+        const multiplication = i * 3;
+        console.log(multiplication);
+    }
+}
+multipleOfThree(10)
+
+//PRint num from n to 1 and skip the number that skip 5 :-
+function printNumFromNToOne(num){
+    for(let i = num; i > 0; i--){
+        if(i === 5){
+            continue;
+        }
+        console.log(i);
+    }       
+}
+printNumFromNToOne(10);
