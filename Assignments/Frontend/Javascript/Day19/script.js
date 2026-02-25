@@ -2,7 +2,7 @@ function sdlkd(num){
     const value  = num % 2 === 0 ? "Even" : "Odd";
     return value;
 }
-// console.log(sdlkd(8));
+console.log(sdlkd(8));
 
 function checkEvenOdd(num) {
     if(num % 2 === 0){
@@ -11,10 +11,10 @@ function checkEvenOdd(num) {
         console.log("Odd");
     }
 }
-// checkEvenOdd(33);
+checkEvenOdd(33);
 
 const add = num => num * 2;
-// console.log(add(3));
+console.log(add(3));
 
 //Sum of 1 to n :-
 function sumOfNum(num){
