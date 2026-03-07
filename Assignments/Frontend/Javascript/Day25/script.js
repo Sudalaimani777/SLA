@@ -36,16 +36,17 @@ function handleClick() {
     }
 
     //Task 2 :-
-    section.className = "bg-red-500 rounded-lg shadow-md p-8 mb-6 text-center transition-colors duration-300";
+    section.classList.remove("bg-white");
+    section.classList.add("bg-red-500");
 }
 
 //Task 3
 function handleMouseOver(){
-    section2.className = "bg-green-500 rounded-lg shadow-md p-8 mb-6 text-center transition-colors duration-300";
+    section2.style.backgroundColor = "green"
     
 }
 function handleMouseOut(){
-    section2.className = "bg-orange-500 rounded-lg shadow-md p-8 mb-6 text-center transition-colors duration-300";
+    section2.style.backgroundColor = "orange"
 }
 
 //Task 4 - Counter
