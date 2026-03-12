@@ -1,6 +1,10 @@
+import BlockAndInline from "./Components/BlockAndInline";
+import Form from "./Components/Form";
+import Formatting from "./Components/Formatting";
 
-import Header from "./Components/Header";
-import Hero from "./Components/Hero";
+import Semantic from "./Components/Semantic";
+import Tables from "./Components/Tables";
+
 
 
 
@@ -8,8 +12,11 @@ function App() {
 
   return (
     <>
-      <Header/>
-      <Hero/>
+      <BlockAndInline />
+      <Semantic />
+      <Formatting />
+      <Form />
+      <Tables />
     </>
   )
 }
