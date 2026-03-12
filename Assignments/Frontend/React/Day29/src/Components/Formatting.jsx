@@ -1,8 +1,18 @@
-import React from 'react'
-
 const Formatting = () => {
   return (
-    <div>Formatting</div>
+    <>
+      {/* Formatting Tags */}
+      <p><strong>This is the strong formatting tag</strong></p>
+      <p>
+        <i>This is the italic tag</i>
+      </p>
+
+      <p>
+        <mark>This is the mark tag</mark>
+      </p>
+
+      <button>Click</button>
+    </>
   )
 }
 

@@ -1,8 +1,13 @@
-import React from 'react'
+import { blockAndInline } from "../../props/blockAndInline"
+import BlockAndInline from "./BlockAndInline"
 
 const Semantic = () => {
   return (
-    <div>Semantic</div>
+    <>
+      <section>
+        <BlockAndInline contents={blockAndInline}/>
+      </section>
+    </>
   )
 }
 
