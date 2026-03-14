@@ -253,3 +253,11 @@ function toFindPosOrNeg (num){
     return res
 }
 console.log(toFindPosOrNeg(-3))
+
+function reverseArray(arr){
+    let container = [];
+    for(let i = arr.length - 1; i >= 0; i--){
+        container[container.length] = arr[i]
+    }
+    console.log(container)
+}
