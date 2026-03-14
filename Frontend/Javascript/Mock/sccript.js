@@ -1,13 +1,13 @@
 // Write a program to check if a number is even or odd.
-function CheckOddEven(num){
-    if (num%2===0){
+function CheckOddEven(num) {
+    if (num % 2 === 0) {
         console.log("even")
-     } else {
+    } else {
         console.log("odd")
-     }
+    }
 }
 
-CheckOddEven(2)
+// CheckOddEven(2)
 
 // Print numbers from 1 to 10.
 // let number=10;
@@ -15,16 +15,16 @@ CheckOddEven(2)
 //     console.log("number");
 // }
 
-function toFindZero(arr){
+function toFindZero(arr) {
     let container = [];
-    for(let i = 0 ; i<= arr.length ; i++){
-        if(arr[i] === 0){
+    for (let i = 0; i <= arr.length; i++) {
+        if (arr[i] === 0) {
             container.push(arr[i])
         }
     }
-    console.log(container.length); 
+    console.log(container.length);
 }
-toFindZero([1,0,0]);
+// toFindZero([1,0,0]);
 
 // Reverse the array [10, 20, 30].
 // function ReverseArr(arr3){
@@ -40,10 +40,10 @@ toFindZero([1,0,0]);
 // function positiveOrNegative()
 //  if (let 0)
 //     console.log("positive");
-    
+
 // {else{
 //     console.log(negative);
-    
+
 // }
 
 // }
@@ -73,7 +73,7 @@ toFindZero([1,0,0]);
 // function sumNum(arr){
 // for(let i = 0; i < arr.length; i++){
 //  console.log(arr);
- 
+
 // }
 // }
 // console.log(sumNum(numbers));
@@ -93,7 +93,7 @@ toFindZero([1,0,0]);
 //     if(num%5==0){
 
 //     }
-    
+
 // }
 // console.log((checkValue(10)))
 
@@ -127,7 +127,7 @@ toFindZero([1,0,0]);
 
 // function printAge(){
 //     let age = 18;
-    
+
 //     if(18){
 //         console.log("eligible")
 
@@ -137,21 +137,21 @@ toFindZero([1,0,0]);
 //     }
 
 //     console.log(age);
-  
+
 // };
 // printAge();
 
 
 // Count how many even numbers are in [1,2,3,4,5,6].
-let a=[1,2,3,4,5,6];
-let count=0;
-for(i=0;i<a.length;i++){
-   if(a[i]%2==0){
-     count++;
-     
-   }
+let a = [1, 2, 3, 4, 5, 6];
+let count = 0;
+for (i = 0; i < a.length; i++) {
+    if (a[i] % 2 == 0) {
+        count++;
+
+    }
 }
-console.log("countof even numbers",count);
+// console.log("countof even numbers",count);
 
 
 
@@ -219,3 +219,37 @@ console.log("countof even numbers",count);
 
 // Reverse the string "world".
 
+function toFIndSum(arr) {
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        count += arr[i]
+    }
+    console.log(count);
+}
+toFIndSum([1, 2]);
+
+function addFive(arr) {
+    let container = [];
+    for (let i = 0; i < arr.length; i++) {
+        container[container.length] = arr[i] + 5;
+    }
+    console.log(container);
+}
+addFive([1, 2])
+
+function findEvenNum(arr) {
+    let container = [];
+    for (let i = 0; i < arr.length; i++){
+        if(arr[i] % 2 === 0){
+            container[container.length] = arr[i];
+        }
+    }
+    console.log(container)
+}
+findEvenNum([1,2,24,])
+
+function toFindPosOrNeg (num){
+    const res = num > 0 ? "Positive" : "Negative";
+    return res
+}
+console.log(toFindPosOrNeg(-3))
