@@ -1,0 +1,59 @@
+.user-card {
+  max-width: 420px;
+  margin: 32px auto;
+  padding: 24px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #f8fbff 0%, #eef5ff 100%);
+  border: 1px solid #d9e8ff;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e293b;
+}
+
+.user-card__title {
+  margin: 0 0 16px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: #0f172a;
+}
+
+.user-card__item {
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #e5efff;
+  line-height: 1.45;
+  word-break: break-word;
+}
+
+.user-card__label {
+  font-weight: 600;
+  margin-right: 6px;
+  color: #334155;
+}
+
+@media (max-width: 768px) {
+  .user-card {
+    margin: 24px 16px;
+    padding: 20px;
+  }
+
+  .user-card__title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-card {
+    margin: 16px 12px;
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .user-card__item {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
