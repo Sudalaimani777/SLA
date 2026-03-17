@@ -1,0 +1,52 @@
+.user-profile-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 16px;
+	padding: 20px;
+}
+
+.user-profile-card {
+	background: #ffffff;
+	border: 1px solid #e6e9ef;
+	border-radius: 12px;
+	padding: 16px;
+	box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+}
+
+.user-profile-card h2 {
+	margin: 0 0 8px;
+	font-size: 20px;
+	color: #0f172a;
+}
+
+.user-profile-card p {
+	margin: 0 0 12px;
+	color: #475569;
+}
+
+.status {
+	display: inline-block;
+	margin: 0;
+	padding: 6px 10px;
+	border-radius: 999px;
+	font-size: 14px;
+}
+
+.signed-in {
+	background: #dcfce7;
+	color: #166534;
+}
+
+.signed-out {
+	background: #fee2e2;
+	color: #991b1b;
+}
+
+.user-profile-empty {
+	margin: 20px;
+	padding: 14px 16px;
+	border-radius: 10px;
+	background: #fff7ed;
+	color: #9a3412;
+	border: 1px solid #fed7aa;
+}
