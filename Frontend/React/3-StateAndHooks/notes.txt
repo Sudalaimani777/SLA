@@ -1,0 +1,11 @@
+Hooks :-
+    Special function by REACT -> Statemanagement, life cycle method and side effects ()
+
+State :-
+    State is a special memory inside a component that holds data which can change over time.
+
+    Life Cycle -> (CRUD)
+
+useState() :-
+    hook 
+     const [currentState, setCurrentState] = useState();
