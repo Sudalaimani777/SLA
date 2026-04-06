@@ -1,4 +1,7 @@
 const section = document.querySelector("section");
+const list = document.getElementById("list");
+const addMangoBtn = document.getElementById("addMangoBtn");
+const card = document.getElementById("card");
 
 // 
 const paragraph =document.createElement("p");
@@ -13,6 +16,16 @@ section.appendChild(button);
 
 button.addEventListener("click", togglePara);
 
+addMangoBtn.addEventListener("click", addMangoToList);
+
+card.addEventListener("mouseover", function () {
+    card.style.backgroundColor = "green";
+});
+
+card.addEventListener("mouseout", function () {
+    card.style.backgroundColor = "white";
+});
+
 function togglePara(){
     if(paragraph.style.display === "none"){
         paragraph.style.display = "block";
@@ -22,4 +35,10 @@ function togglePara(){
         paragraph.style.display = "none";
         button.textContent = "Show Para";
     }
+}
+
+function addMangoToList() {
+    const newItem = document.createElement("li");
+    newItem.textContent = "Mango";
+    list.appendChild(newItem);
 }
