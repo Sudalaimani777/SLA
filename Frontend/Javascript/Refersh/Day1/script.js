@@ -59,5 +59,14 @@ const add = () => {
 }
 add();
 
-console.log(a);
-console.log(b);
+// console.log(a);
+// console.log(b);
+
+const sum = () => {
+    let a= 20;
+    function aa () {
+        console.log(thisa)
+    }
+    aa()
+}
+sum();
