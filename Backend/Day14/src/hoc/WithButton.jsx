@@ -1,0 +1,1 @@
+export const WithButton = (WrapperComponent) => (props) => <WrapperComponent {...props} />
