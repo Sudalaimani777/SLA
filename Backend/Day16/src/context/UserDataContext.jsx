@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useState } from "react";
 import { createContext } from "react";
 
@@ -7,7 +8,14 @@ const UserDataContext = createContext();
 export const UserDataProvider = ({ children }) => {
 
     const [singleUserData, setSingleUserData] = useState({ userName: "", userAge: "", userEmail: "" });
-    const [allUserData, setAllUser] = useState([]);
+    const [allUserData, setAllUser] = useState(() => {
+        const getData = JSON.parse(localStorage.getItem("userData"));
+        try {
+            return getData ? getData : []
+        } catch (err) {
+            return []
+        }
+    });
 
     const handleUserValueChange = (e) => {
         const { name, value } = e.target;
@@ -18,8 +26,11 @@ export const UserDataProvider = ({ children }) => {
         e.preventDefault();
         setAllUser(prevUser => [...prevUser, singleUserData]);
         setSingleUserData({ userName: "", userAge: "", userEmail: "" })
-        
     }
+
+    useEffect(() => {
+        localStorage.setItem("userData", JSON.stringify(allUserData))
+    }, [allUserData])
 
     return (
         <UserDataContext.Provider
