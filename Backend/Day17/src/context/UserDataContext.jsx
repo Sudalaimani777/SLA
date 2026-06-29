@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react"
+import {useNavigate} from "react-router-dom"
 
 
 const UserDataContext = createContext();
@@ -11,7 +12,7 @@ export const UserDataProvider = ({ children }) => {
       const getData = JSON.parse(localStorage.getItem("userInfo"));
       return getData ? getData : []
     } catch (e) {
-      return e
+      return []
     }
   });
 
@@ -20,10 +21,13 @@ export const UserDataProvider = ({ children }) => {
     setUserDetails({ ...userDetails, [name]: value })
   }
 
+  const navigate = useNavigate();
+
   const handleRegister = (e) => {
     e.preventDefault();
     setAllUserDetails(prevData => [...prevData, userDetails]);
     setUserDetails({ userName: "", userEmail: "", userPassword: "" })
+    navigate("/login");
   }
 
   useEffect(() => {
@@ -40,4 +44,4 @@ export const UserDataProvider = ({ children }) => {
   )
 }
 
-export default UserDataContext
+export default UserDataContext;
